@@ -1,0 +1,59 @@
+export const profile = {
+  name: "Piyush Aggarwal",
+  shortName: "Piyush",
+  location: "Delhi, India",
+  university: "SRM University, Sonepat",
+  role: "Student • Developer • Builder",
+  email: "piyushaggarwal1322009@gmail.com",
+  github: "https://github.com/piyushaggarwal1322009-bit",
+  linkedin: "",
+  tagline: "I learn by building, break things to understand them, and turn ideas into working products.",
+  intro:
+    "I’m a student developer interested in software, AI, full-stack engineering and building products that solve real problems.",
+  philosophy: [
+    {
+      title: "Build over theory",
+      text: "Understanding becomes deeper when an idea is turned into something people can actually use."
+    },
+    {
+      title: "Stay curious",
+      text: "Technology changes quickly. I would rather keep learning than become comfortable with one stack."
+    },
+    {
+      title: "Solve real problems",
+      text: "A good project should have a reason to exist beyond demonstrating a technology."
+    },
+    {
+      title: "Keep improving",
+      text: "Every project is a chance to improve engineering judgment, product thinking and execution."
+    }
+  ],
+  previousSchools: [
+    {
+      name: "Add previous school",
+      period: "Add years",
+      note: "Replace this placeholder with your actual school information."
+    }
+  ]
+};
+
+export const techStack = {
+  languages: [
+    "Python", "JavaScript", "TypeScript", "Java", "C", "C++", "HTML", "CSS", "SQL"
+  ],
+  frontend: [
+    "React", "Next.js", "Tailwind CSS", "Responsive UI", "Framer Motion"
+  ],
+  backend: [
+    "Node.js", "Express.js", "FastAPI", "REST APIs", "WebSockets"
+  ],
+  ai: [
+    "Generative AI", "LLM APIs", "Prompt Engineering", "AI-powered Applications", "AI Product Integration"
+  ],
+  databases: [
+    "PostgreSQL", "Supabase", "MongoDB", "SQL"
+  ],
+  other: [
+    "Git", "GitHub", "Vercel", "API Integration", "Authentication", "Testing"
+  ]
+};
