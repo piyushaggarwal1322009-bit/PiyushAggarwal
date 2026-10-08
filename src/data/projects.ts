@@ -1,77 +1,75 @@
 export type Project = {
+  id: "grillr" | "jal-dhara" | "ez-kwelez";
   name: string;
-  eyebrow: string;
+  category: string;
   description: string;
-  status: string;
-  stack: string[];
-  highlights: string[];
-  github: string;
-  live?: string;
+  technologies: string[];
+  features: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+  previewUrl?: string;
+  accentTheme: "violet" | "cyan" | "ice";
+  previewMode: "iframe" | "visual";
 };
+
+const grillrUrl = process.env.NEXT_PUBLIC_GRILLR_URL?.trim() || undefined;
 
 export const projects: Project[] = [
   {
+    id: "grillr",
     name: "Grillr",
-    eyebrow: "AI • Mock Interviews",
+    category: "AI Mock Interview Platform",
     description:
-      "A mock-interview web application designed to conduct interviews, transcribe answers, score responses and provide structured feedback.",
-    status: "Building",
-    stack: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "FastAPI",
-      "Groq",
-      "Supabase",
-      "Web Speech API"
-    ],
-    highlights: [
-      "Browser-native speech recognition and speech synthesis",
-      "AI-driven interview evaluation and structured feedback",
-      "Designed around free-tier infrastructure"
-    ],
-    github: "https://github.com/piyushaggarwal1322009-bit",
+      "An AI-powered mock-interview application for practicing interview conversations.",
+    technologies: [],
+    features: [],
+    liveUrl: grillrUrl,
+    previewUrl: grillrUrl,
+    accentTheme: "violet",
+    previewMode: "iframe",
   },
   {
+    id: "jal-dhara",
     name: "JAL-DHARA",
-    eyebrow: "Civic Tech • Sustainability • AI",
+    category: "Water Systems / Educational Simulation",
     description:
-      "A digital water-intelligence concept inspired by traditional Indian water systems, using simulation and optimization to explore restoration decisions.",
-    status: "Prototype / Hackathon",
-    stack: [
+      "An illustrative, one-step simulation of connected tanks and channels for exploring water delivery and repair scenarios.",
+    technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "React Flow",
       "Zod",
       "Vitest",
-      "Groq"
+      "Groq",
     ],
-    highlights: [
-      "Network-based water-flow simulation",
-      "Budget-constrained repair optimization",
-      "Documentation-first engineering approach"
+    features: [
+      "Adjust a scenario and run the water balance",
+      "Explore channel failures and delivery changes",
+      "Compare budget-limited repair options",
     ],
-    github: "https://github.com/piyushaggarwal1322009-bit/JAL-DHARA",
-    live: "https://jal-dhara.vercel.app/"
+    githubUrl: "https://github.com/piyushaggarwal1322009-bit/JAL-DHARA",
+    liveUrl: "https://jal-dhara.vercel.app/",
+    previewUrl: "https://jal-dhara.vercel.app/",
+    accentTheme: "cyan",
+    previewMode: "iframe",
   },
   {
+    id: "ez-kwelez",
     name: "EZ Kwelez",
-    eyebrow: "Product • Web",
+    category: "Campus Operations / Decision Support",
     description:
-      "A project from my wider experimentation with building practical web products and turning an idea into a usable interface.",
-    status: "Project",
-    stack: [
-      "Web Development",
-      "JavaScript",
-      "UI Engineering",
-      "API Integration"
+      "A campus disruption-response and recovery platform that maps dependencies, assesses operational impact, and explores recovery options using simulated data.",
+    technologies: ["Next.js", "TypeScript", "FastAPI"],
+    features: [
+      "Campus dependency mapping",
+      "Incident impact and blast-radius analysis",
+      "Recovery options and what-if simulation",
     ],
-    highlights: [
-      "Product-oriented development",
-      "Focus on usability and interaction",
-      "Built as part of my broader project journey"
-    ],
-    github: "https://github.com/piyushaggarwal1322009-bit"
-  }
+    githubUrl: "https://github.com/piyushaggarwal1322009-bit/EzKwelez",
+    liveUrl: "https://ezkwelez.vercel.app/",
+    previewUrl: "https://ezkwelez.vercel.app/",
+    accentTheme: "ice",
+    previewMode: "iframe",
+  },
 ];

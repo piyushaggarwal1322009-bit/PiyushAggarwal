@@ -43,11 +43,10 @@ The project is ready for deployment on a Next.js-compatible platform such as Ver
 
 ## Before publishing
 
-Update:
+Optional configuration:
 
-- Previous school details in `src/data/profile.ts`
-- Personal philosophy in `src/data/profile.ts`
-- Project links in `src/data/projects.ts`
+- Set `NEXT_PUBLIC_GRILLR_URL` in `.env.local` to Grillr's real deployment URL to enable the embedded preview and live-app links. Leave it unset until the URL is confirmed.
+- Project details and verified links are maintained in `src/data/projects.ts`.
 - Optional profile image at `public/profile.jpg`
 - LinkedIn URL when available
 

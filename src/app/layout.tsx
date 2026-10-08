@@ -2,14 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Piyush Aggarwal — Developer & Builder",
+  title: "Piyush Aggarwal — Student Developer",
   description:
-    "Personal portfolio of Piyush Aggarwal — student developer, builder and technology enthusiast based in Delhi.",
-  metadataBase: new URL("https://piyushaggarwal1322009-bit.github.io"),
+    "Piyush Aggarwal is a student at SRM University, Sonepat, exploring full-stack development, AI, and useful software through projects.",
   openGraph: {
-    title: "Piyush Aggarwal — Developer & Builder",
-    description: "Projects, technology and the journey of Piyush Aggarwal.",
-    type: "website"
+    title: "Piyush Aggarwal — Student Developer",
+    description: "Projects and explorations in full-stack development, AI, and useful software.",
+    type: "website",
+    siteName: "Piyush Aggarwal"
+  },
+  twitter: {
+    card: "summary",
+    title: "Piyush Aggarwal — Student Developer",
+    description: "Projects and explorations in full-stack development, AI, and useful software."
   }
 };
 
