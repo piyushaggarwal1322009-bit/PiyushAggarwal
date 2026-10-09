@@ -7,38 +7,30 @@ export const profile = {
   email: "piyushaggarwal1322009@gmail.com",
   github: "https://github.com/piyushaggarwal1322009-bit",
   linkedin: "",
-  tagline: "I build software at the intersection of engineering, AI, and real-world problems.",
+  tagline: "I learn by building, break things to understand them, and turn ideas into working products.",
   intro:
-    "I’m a student at SRM University, Sonepat, exploring full-stack development and AI through hands-on projects. I like thinking about both how a product works and whether it is useful, then learning through the process of making it better.",
+    "I’m a student developer interested in software, AI, full-stack engineering and building products that solve real problems.",
   philosophy: [
     {
-      title: "Build to understand",
-      text: "Turning an idea into a working project makes the questions clearer and the learning stick."
+      title: "Build over theory",
+      text: "Understanding becomes deeper when an idea is turned into something people can actually use."
     },
     {
       title: "Stay curious",
-      text: "I stay open to new tools and ideas, and treat each project as a chance to learn something properly."
+      text: "Technology changes quickly. I would rather keep learning than become comfortable with one stack."
     },
     {
       title: "Solve real problems",
-      text: "I want the technology to serve a useful outcome, not become the outcome itself."
+      text: "A good project should have a reason to exist beyond demonstrating a technology."
     },
     {
       title: "Keep improving",
-      text: "Experimenting, testing assumptions, and making thoughtful changes is how a project gets stronger."
+      text: "Every project is a chance to improve engineering judgment, product thinking and execution."
     }
   ],
   previousSchools: [
-    {
-      name: "Dayanand Public School",
-      period: "CLASS 10",
-      note: "Completed Class 10."
-    },
-    {
-      name: "Darshan Academy",
-      period: "CLASS 12",
-      note: "Completed Class 12."
-    }
+    { name: "Darshan Academy", period: "SCHOOL", note: "Completed Class 12." },
+    { name: "Dayanand Public School", period: "SCHOOL", note: "Completed Class 10." }
   ]
 };
 
@@ -49,15 +41,16 @@ export const techStack = {
   frontend: [
     "React", "Next.js", "Tailwind CSS", "Responsive UI", "Framer Motion"
   ],
-  backend: ["Node.js"],
+  backend: [
+    "Node.js", "Express.js", "FastAPI", "REST APIs", "WebSockets"
+  ],
   ai: [
     "Generative AI", "LLM APIs", "Prompt Engineering", "AI-powered Applications", "AI Product Integration"
   ],
   databases: [
     "PostgreSQL", "Supabase", "MongoDB", "SQL"
   ],
-  frameworksApis: [
-    "Express.js", "FastAPI", "REST APIs", "WebSockets", "API Integration", "Authentication"
-  ],
-  ecosystem: ["Git", "GitHub", "Vercel", "Testing"]
+  other: [
+    "Git", "GitHub", "Vercel", "API Integration", "Authentication", "Testing"
+  ]
 };

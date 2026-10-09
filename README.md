@@ -43,12 +43,26 @@ The project is ready for deployment on a Next.js-compatible platform such as Ver
 
 ## Before publishing
 
-Optional configuration:
+Update:
 
-- Set `NEXT_PUBLIC_GRILLR_URL` in `.env.local` to Grillr's real deployment URL to enable the embedded preview and live-app links. Leave it unset until the URL is confirmed.
-- Project details and verified links are maintained in `src/data/projects.ts`.
+- Previous school details in `src/data/profile.ts`
+- Personal philosophy in `src/data/profile.ts`
+- Project links in `src/data/projects.ts`
 - Optional profile image at `public/profile.jpg`
 - LinkedIn URL when available
 
 GitHub:
 https://github.com/piyushaggarwal1322009-bit
+
+## GitHub activity data
+
+The activity route uses GitHub's public REST API for public repository count, stars, and repository languages. The contribution calendar comes from [github-contributions-api](https://github.com/grubersjoe/github-contributions-api), whose documented JSON response is validated server-side; its upstream results are cached for one hour. The route also caches its response and the browser keeps a last-known-good copy for offline or upstream-error states.
+
+No GitHub token is required or configured. A scheduled daily refresh is not configured; refreshes happen when the route is requested and its cache expires. The contribution service is an external dependency and may be unavailable, in which case saved activity is shown when available.
+
+## Verified project links
+
+- Grillr source: https://github.com/Sarthak-madan334/Grillr. No public live frontend URL was found in its repository configuration.
+- JAL-DHARA live demo: https://jal-dhara.vercel.app/; source: https://github.com/piyushaggarwal1322009-bit/JAL-DHARA.
+- EZ Kwelex source (repository name: EzyKwelez): https://github.com/piyushaggarwal1322009-bit/EzKwelez; live application: https://ezkwelez.vercel.app/.
+- Migration Y source: https://github.com/Sarthak-madan334/MigrationY. Its documented Phase 0 is a local CLI rehearsal; no verified live deployment URL was found.

@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
+const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
+const playfairDisplay = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair-display" });
+
 export const metadata: Metadata = {
-  title: "Piyush Aggarwal — Student Developer",
+  title: "Piyush Aggarwal — Developer & Builder",
   description:
-    "Piyush Aggarwal is a student at SRM University, Sonepat, exploring full-stack development, AI, and useful software through projects.",
+    "Personal portfolio of Piyush Aggarwal — student developer, builder and technology enthusiast based in Delhi.",
+  metadataBase: new URL("https://piyushaggarwal1322009-bit.github.io"),
   openGraph: {
-    title: "Piyush Aggarwal — Student Developer",
-    description: "Projects and explorations in full-stack development, AI, and useful software.",
-    type: "website",
-    siteName: "Piyush Aggarwal"
-  },
-  twitter: {
-    card: "summary",
-    title: "Piyush Aggarwal — Student Developer",
-    description: "Projects and explorations in full-stack development, AI, and useful software."
+    title: "Piyush Aggarwal — Developer & Builder",
+    description: "Projects, technology and the journey of Piyush Aggarwal.",
+    type: "website"
   }
 };
 
@@ -23,7 +22,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${dmSans.variable} ${playfairDisplay.variable}`}>{children}</body>
     </html>
   );
 }
